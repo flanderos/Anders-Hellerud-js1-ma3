@@ -3,6 +3,22 @@ const gameName = document.querySelector(".name");
 const gameRating = document.querySelector(".rating");
 const gameTags = document.querySelector(".tags");
 
+//Loader
+
+const loader = document.querySelector(".loader");
+
+function displayLoader() {
+  loader.classList.add("display");
+
+  setTimeout(() => {
+    loader.classList.remove("display");
+  }, 2000);
+}
+
+displayLoader();
+
+//Api call
+
 const url =
   "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=3533b7792e1b452baa8d22576f4b65b0";
 
