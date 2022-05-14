@@ -17,8 +17,10 @@ body {
 .name {
     border: 1px solid white;
     margin-bottom: 5px;
-    
+    font-size: 2rem;
 }
+
+
 
 .rating {
     border: 1px solid white;

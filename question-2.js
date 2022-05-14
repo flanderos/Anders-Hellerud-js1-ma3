@@ -18,8 +18,41 @@ async function getName() {
       break;
     }
     gameName.innerHTML += `<li>${gameList[i].name}</li>`;
-    console.log(gameList[i].name);
   }
 }
 
 getName();
+
+async function getRating() {
+  const response = await fetch(url);
+
+  const results = await response.json();
+
+  const gameList = results.results;
+
+  for (let i = 0; i < gameList.length; i++) {
+    if (i > 7) {
+      break;
+    }
+    gameRating.innerHTML += `<li>${gameList[i].rating}</li>`;
+  }
+}
+
+getRating();
+
+async function getTags() {
+  const response = await fetch(url);
+
+  const results = await response.json();
+
+  const gameList = results.results;
+
+  for (let i = 0; i < gameList.length; i++) {
+    if (i > 7) {
+      break;
+    }
+    gameTags.innerHTML += `<li>${gameList[i].tags.length}</li>`;
+  }
+}
+
+getTags();
