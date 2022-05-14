@@ -1,0 +1,35 @@
+body {
+    background-color: brown;
+}
+
+.container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.name {
+    border: 1px solid white;
+    margin-bottom: 5px;
+    
+}
+
+.rating {
+    border: 1px solid white;
+    margin-bottom: 5px;
+}
+
+.tags {
+    border: 1px solid white;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
